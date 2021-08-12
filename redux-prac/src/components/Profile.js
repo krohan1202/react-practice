@@ -3,8 +3,10 @@ import {useSelector} from "react-redux"; //useSelector hook is used for accessin
 
 function Profile() {
     const user = useSelector(state => state.user.value);
+    const themeColor = useSelector(state => state.theme.value);
+
     return (
-        <div>
+        <div style={{color: themeColor}}>
             <h1>Name: {user.name}</h1>
             <h1>Age: {user.age}</h1>
             <h1>Email: {user.email}</h1>
