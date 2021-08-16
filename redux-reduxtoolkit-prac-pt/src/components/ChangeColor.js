@@ -5,7 +5,7 @@ import {changeColor} from "../features/theme";
 function ChangeColor() {
     const dispatch = useDispatch();
 
-    const [color, setColor] = useState("aqua");
+    const [color, setColor] = useState("");
 
     return (
         <div>

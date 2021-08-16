@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialStateValue = "";
+const initialStateValue = "aqua";
 
 export const themeSlice = createSlice({
     name: "theme",

@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+// Redux
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
+// Features
 import userReducer from "./features/user";
 import themeReducer from "./features/theme";
 
