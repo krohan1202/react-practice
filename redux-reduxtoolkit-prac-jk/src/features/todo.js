@@ -1,13 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialStateValue = ["Test"];
 
 export const todoSlice = createSlice({
     name: "todo",
-    initialState: {value: {taskName: initialStateValue}},
+    initialState: {
+        value: {
+            taskName: ["Test"]
+        }
+    },
     reducers: {
         todoTask: (state, action) => {
-            state.value = action.payload;         
+            state.value.taskName.push(action.payload);
         }
     }
 })
