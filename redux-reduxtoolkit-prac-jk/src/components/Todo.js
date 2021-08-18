@@ -26,7 +26,7 @@ function Todo() {
             ))}
             <input value={text} onChange={(e) => setText(e.target.value)}/>
             <button type="submit" onClick={() => {
-                setText(""); //Not working
+                setText("");
                 dispatch(todoTask(text));
             }}>Go</button>
         </div>
